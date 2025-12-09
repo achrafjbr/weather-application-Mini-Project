@@ -2,13 +2,13 @@
 // Ville, Temp, Humidity, weatherStiuation( "Clouds", "Clear" "Sany")
 import { Weather } from './weather.js';
 
-const APIKEY = "d4f29ce30cac920b59ea3366eb8444d9"
-
-const BASEURL = "https://api.openweathermap.org/data/2.5/weather?";
-
-const clearWeather = "amcharts_weather_icons_1.0.0/animated/day.svg";
-const cloudyWeather = "amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg";
-const rainyWeather = "amcharts_weather_icons_1.0.0/animated/rainy-6.svg";
+import {
+    clearWeather,
+    cloudyWeather,
+    rainyWeather,
+    APIKEY,
+    BASEURL
+} from './constants/constant.js';
 
 let dateTime = Date().split(' ').splice(0, 5);
 let timeSplit = dateTime[dateTime.length - 1].split(':');
@@ -79,7 +79,7 @@ fetchWeatherData("london")
         weatherFeelsLike.appendChild(supElement);
 
         let currentWeatherState = checkWeather(weatherObj.state);
-        weatherImage.src ='';
+        weatherImage.src = '';
         weatherImage.src = currentWeatherState;
     })
     .catch(error => error);
