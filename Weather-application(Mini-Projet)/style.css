@@ -4,3 +4,112 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.weather-container {
+    width: 90%;
+    height: 80vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 15px;
+    box-shadow: 4 4 5 6 whitesmoke;
+}
+
+.weather-left-side {
+    width: 65%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.weather-right-side {
+    background-color: rgb(169, 220, 240);
+    border-radius: 0 15px 15px 0;
+    padding: 2rem;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.weather-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-content .weather-tempurator {
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: clamp(5rem, 10vw, 6rem);
+    color: gray;
+}
+
+.weather-content .weather-tempurator sup {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 10px gray solid;
+}
+
+.weather-content .weather-state {
+    color: gray;
+}
+
+.weather-right-side-content {
+    padding: 20px 6px;
+}
+
+.weather-right-side-content .weather-tempurator {
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.weather-right-side-content .weather-tempurator sup {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 3px black solid;
+}
+
+.weather-feels-like {
+    padding-bottom: 7px;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.weather-feels-like sup {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px gray solid;
+}
+
+.weather-cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-cases img{
+    align-self: flex-end;
+}

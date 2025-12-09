@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
 </head>
-<body>
-    
-    
 
-    <script src="script.js"></script>
+<body>
+    <div class="weather-container">
+
+        <!--Left side-->
+        <div class="weather-left-side">
+            <!--Weathder header -->
+            <div class="weather-header">
+                <h3 class="weather-city"></h3>
+                <h3 class="weather-date"></h3>
+            </div>
+
+            <!--Weathder content -->
+            <div class="weather-content">
+                <div class="weather-cases">
+                    <h1 class="weather-tempurator">
+                        <sup></sup>
+                    </h1>
+                    <img id="weather-image" src="amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg" alt="weatherImage">
+                </div>
+                <h1 class="weather-state"></h1>
+            </div>
+        </div>
+
+        <!--Rigth side-->
+        <div class="weather-right-side">
+            <div class="weather-right-side-header">
+                <h3 class="weather-duration">Good Morning</h3>
+                <h3 class="weather-time">12:27 PM</h3>
+            </div>
+            <div class="weather-right-side-content">
+                <h1 class="weather-tempurator"><sup></sup></h1>
+                <p class="weather-feels-like">Feels like: </p>
+                <h1 class="weather-state"></h1>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script type="module" src="script.js"></script>
 </body>
+
 </html>
