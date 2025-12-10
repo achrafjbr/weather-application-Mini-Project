@@ -54,6 +54,11 @@ body {
     align-items: center;
 }
 
+.weather-tempurator {
+    display: flex;
+    justify-content: center;
+}
+
 .weather-content .weather-tempurator {
     padding-bottom: 1rem;
     font-weight: 600;
@@ -80,6 +85,7 @@ body {
 .weather-right-side-content .weather-tempurator {
     font-weight: 600;
     padding: 10px 0;
+
 }
 
 .weather-right-side-content .weather-tempurator sup {
@@ -94,6 +100,8 @@ body {
     padding-bottom: 7px;
     font-size: 0.8rem;
     color: gray;
+    display: inline-block;
+
 }
 
 .weather-feels-like sup {
@@ -103,6 +111,15 @@ body {
     border-radius: 50%;
     border: 1px gray solid;
 }
+
+.weather-data-feels-like sup {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px gray solid;
+}
+
 
 .weather-cases {
     display: flex;
@@ -140,4 +157,9 @@ body {
     }
 
 
+}
+
+
+.weather-data {
+    display: inline;
 }
