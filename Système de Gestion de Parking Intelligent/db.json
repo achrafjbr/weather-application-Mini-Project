@@ -1,0 +1,106 @@
+{
+  "reservation": [
+    {
+      "id": "64f42",
+      "plateNumber": "999898",
+      "type": "bike",
+      "entryTime": "14:30",
+      "exitTime": "",
+      "slotNumber": "A1"
+    },
+    {
+      "id": "7c6a",
+      "plateNumber": "222SSS",
+      "type": "car",
+      "entryTime": "18:34",
+      "exitTime": "",
+      "slotNumber": "A2"
+    }
+  ],
+  "places": [
+    {
+      "id": "1",
+      "available": false,
+      "slotNumber": "A1",
+      "plateNumber": "999898"
+    },
+    {
+      "id": "2",
+      "available": false,
+      "slotNumber": "A2",
+      "plateNumber": "222SSS"
+    },
+    {
+      "id": "3",
+      "available": true,
+      "slotNumber": "A3",
+      "plateNumber": "N"
+    },
+    {
+      "id": "4",
+      "available": true,
+      "slotNumber": "A4",
+      "plateNumber": "N"
+    },
+    {
+      "id": "5",
+      "available": true,
+      "slotNumber": "A5",
+      "plateNumber": "N"
+    },
+    {
+      "id": "6",
+      "available": true,
+      "slotNumber": "A6",
+      "plateNumber": "N"
+    },
+    {
+      "id": "7",
+      "available": true,
+      "slotNumber": "A7",
+      "plateNumber": "N"
+    },
+    {
+      "id": "8",
+      "available": true,
+      "slotNumber": "A8",
+      "plateNumber": "N"
+    },
+    {
+      "id": "9",
+      "available": true,
+      "slotNumber": "A9",
+      "plateNumber": "N"
+    },
+    {
+      "id": "10",
+      "available": true,
+      "slotNumber": "A10",
+      "plateNumber": "N"
+    },
+    {
+      "id": "11",
+      "available": true,
+      "slotNumber": "A11",
+      "plateNumber": "N"
+    },
+    {
+      "id": "12",
+      "available": true,
+      "slotNumber": "A12",
+      "plateNumber": "N"
+    },
+    {
+      "id": "13",
+      "available": true,
+      "slotNumber": "A13",
+      "plateNumber": "N"
+    },
+    {
+      "id": "14",
+      "available": true,
+      "slotNumber": "A14",
+      "plateNumber": "N"
+    }
+  ]
+}

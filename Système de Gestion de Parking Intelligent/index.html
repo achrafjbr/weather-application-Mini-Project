@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARKING SYSTEM</title>
+</head>
+
+<body>
+
+    <div class="app">
+        <header class="header">
+        </header>
+        <div class="app-container">
+
+            <div class="parking parking-area">
+                <div class="zones">
+
+                </div>
+            </div>
+            <div class="parking parking-overview">
+                <h4>Parking-overview</h4>
+            </div>
+            <div class="parking parking-booking">
+                <h4>Book your parking</h4>
+                <div class="booking">
+                    <input type="time" name="book-time" id="book-date">
+                    <input type="text" name="matricule" id="matricule" placeholder="Matriculation">
+                    <div class="error-validation">Something went wrong</div>
+                    <div class="vehicules">
+
+                        <div class="vehicule bike isActive">
+                            <img src="images/bike.png" alt="bike">
+                            <h6>Bike</h6>
+                        </div>
+
+                        <div class="vehicule car">
+                            <img src="images/sedan.png" alt="car">
+                            <h6>Car</h6>
+                        </div>
+
+                        <div class="vehicule truck">
+                            <img src="images/truck.png" alt="truck">
+                            <h6>Truck</h6>
+                        </div>
+
+                    </div>
+                    <div class="booking-button">Booking</div>
+
+                </div>
+
+            </div>
+            <div class="parking current-park">
+                <h4>Current parked</h4>
+                <div class="calculation-price">
+                    <div class="price-duration">
+
+                        <div class="price">
+                            <p>Price per hour</p>
+                            <h4>5 DH</h4>
+                        </div>
+
+                        <div class="duration">
+                            <p>Duration</p>
+                            <h4 class="duration-vehicule">... H</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="vhicule-number">
+                        <p>Vehicule number</p>
+                        <div class="number">
+                            ...
+                        </div>
+                    </div>
+                    <div class="vehicule-type">
+                        <h4 id="vhicule-name">Vehicule Type</h4>
+                        <img src="images/notfound.png" alt="vhicule-img" id="vhicule-type">
+                    </div>
+
+                    <div class="vhicule-slot">
+                        <p>Parking slot</p>
+                        <div class="slot">
+                            ...
+                        </div>
+                        <div class="exit">Exit your vehicule</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

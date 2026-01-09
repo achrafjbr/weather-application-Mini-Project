@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.app-container {
+    background: pink;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 5px;
+}
+
+.parking {
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+
+/* parking area */
+
+.parking-area {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.zones {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    overflow: scroll;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.zones::-webkit-scrollbar {
+    display: none;
+}
+
+.zone {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+  
+}
+
+
+/**/
+
+.zone.isReserved {
+    background: rgba(101, 114, 255, 0.589);
+      position: relative;
+}
+
+.zone.isReserved .reserved-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.reserved-zone img {
+    width: 100%;
+    filter: drop-shadow(5px 5px 6px );
+    object-fit: cover;
+}
+
+.current-park {
+    grid-column: 1/3;
+}
+
+.current-park .price-duration p {
+    font-size: 14px;
+    color: gray;
+}
+
+.calculation-price {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.calculation-price .price-duration {}
+
+.price {
+    margin-bottom: 30px;
+}
+
+.price,
+.duration,
+.vhicule-number {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.589);
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.vhicule-slot:has(p, .slot) {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.589);
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.vhicule-slot p,
+.vhicule-number p {
+    color: gray;
+}
+
+.vhicule-slot .slot {
+    margin-bottom: 30px;
+}
+
+.vhicule-slot .exit {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.vhicule-slot .exit.disabled {
+    cursor: no-drop;
+    background: gray;
+}
+
+.vehicule-type {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.589);
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.vehicule-type img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.parking-booking {
+    grid-row: span 3;
+    padding: 1% 1%;
+
+    #book-date,
+    #matricule {
+        border: none;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 10px;
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+    }
+}
+
+.vehicule {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.589);
+    height: 7rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.vehicule.isActive {
+    background: rgba(101, 114, 255, 0.589);
+}
+
+.vehicule img {
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.vehicules {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.booking-button {
+    padding: 10px;
+    background-color: rgb(34, 59, 59);
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.booking {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.showError {
+    color: red;
+    text-align: center;
+    height: 0;
+}
+
+.error-validation {
+    display: none;
+    transition: all 1s linear;
+}
+
+.error-validation.showError {
+    display: block;
+}
+
+.parking {
+    text-align: center;
+    padding: 15px;
+    font-weight: normal;
+}
